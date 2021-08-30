@@ -7,7 +7,7 @@ public class Lista04Ex04 {
     public static void main(String[] args) {
         Scanner leitorMedia = new Scanner(System.in);
         // 3 - Faça um programa para ler 5 números e mostrar o resultado da soma desses números.
-        System.out.println("Digite a quantide de números, por favor:");
+        System.out.println("Digite a quantidade de números, por favor:");
 
         double qtdNumeros = leitorMedia.nextDouble();
         double soma = 0;
