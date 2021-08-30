@@ -10,14 +10,15 @@ public class Lista04Ex03 {
         System.out.println("Digite 5 números."); //mensagem que aparece ao usuario
 
         double soma = 0;
-        int contador = 0;
+        int contador = 1;
 
-        while (contador < 5) {
-            System.out.println("Digite o número:"); //mensagem que aparece ao usuario
+        while (contador <= 5) {
+            System.out.println("Digite o número "+ contador++); //mensagem que aparece ao usuario
             double numeroInserido = leitorSoma.nextDouble(); //numero que o usuário digita
             soma = soma + numeroInserido;
-            contador++;
         }
+        contador++;
+
         System.out.println("A soma de todos os números inseridos é de: " +soma); //mensagem que aparece ao usuario
 
     }
