@@ -11,6 +11,20 @@ public class Desafio02 {
 
         Scanner leitorNumero = new Scanner(System.in); //leitor de dados do usuário
 
+        //variaveis
+        double maiorNumero = 0;
+        double menorNumero = 0;
+        double somaDosNumeros = 0;
+        double valorLidoPeloUsuario;
+        int contador = 1;
+
+        System.out.println("Digite a quantidade de números a serem analisados: ");
+        double quantidadeDeValores = leitorNumero.nextDouble();
+
+        while (contador <= quantidadeDeValores) {
+            System.out.println("Digite o número " +contador+ " :");
+        }
+
 
 
     }
