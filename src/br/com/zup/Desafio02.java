@@ -22,10 +22,28 @@ public class Desafio02 {
         double quantidadeDeValores = leitorNumero.nextDouble();
 
         while (contador <= quantidadeDeValores) {
-            System.out.println("Digite o número " +contador+ " :");
+            System.out.println("Digite o número " + contador++ + " :"); //mensagem exibida o usuário
+            valorLidoPeloUsuario = leitorNumero.nextDouble();
+
+            // Se o usuário digitar apenas um único número o número digitado é o menor e o maior número digitado (*raciocínio chave para a resolução*)
+            if (contador == 1) {
+                menorNumero = valorLidoPeloUsuario;
+                maiorNumero = valorLidoPeloUsuario;
+            } else {
+                if (valorLidoPeloUsuario <= menorNumero){
+                    menorNumero = valorLidoPeloUsuario;
+                }
+                if (valorLidoPeloUsuario >= maiorNumero) {
+                    maiorNumero = valorLidoPeloUsuario;
+                }
+            }
+            somaDosNumeros = somaDosNumeros + valorLidoPeloUsuario;
+            //somaDosNumeros += valorLidoPeloUsuario ( <~~ pode ser escrito assim também)
+            contador++; // sempre colocar no final do loop
+
+            System.out.println("O menor número digitado é: " + menorNumero);
+            System.out.println("O maior número digitado é: " + maiorNumero);
+            System.out.println("A soma de todos os números digitados é: " + somaDosNumeros);
         }
-
-
-
     }
 }
